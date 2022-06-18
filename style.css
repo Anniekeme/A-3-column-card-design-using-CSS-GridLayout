@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Poppins:wght@400;500&display=swap');
+body {
+    font-family: 'Changa', sans-serif;
+}
+
+.mother {
+    background-color: rgba(78, 82, 87, 0.307);
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+
+.container {
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: #eee;
+    max-width: 50%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-areas: 'one' 'two' 'three';
+}
+
+.child {
+    padding: 2em;
+}
+
+p {
+    color: #fff;
+    font-size: .8em;
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    top: 12%;
+    padding: .5em 2em;
+    margin-top: 4em;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    color: #000;
+}
+
+.btn:active {
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    box-shadow: 0 5px 1px rgba(0, 0, 0, .2);
+}
+
+.head-text {
+    color: #fff;
+}
+
+.item {
+    padding: 1em;
+}
+
+.item--1 {
+    background-color: #E28525;
+}
+
+.item--2 {
+    background-color: #016972;
+}
+
+.item--3 {
+    background-color: #00403F;
+}
+
+@media (min-width: 50em) {
+    .container {
+        grid-template-areas: 'one two three';
+    }
+}
